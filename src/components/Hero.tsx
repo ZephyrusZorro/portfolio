@@ -92,34 +92,10 @@ export function Hero() {
           </div>
         </div>
 
-        {/* Right Column — Architecture Diagram + Founder Photo */}
-        <div className="lg:col-span-5 space-y-6">
+        {/* Right Column — Architecture Diagram */}
+        <div className="lg:col-span-5 w-full">
           {/* Living Architecture Diagram */}
           <ArchitectureVisual />
-
-          {/* Profile Card Overlay */}
-          <div className="p-5 rounded-2xl border border-[var(--border-color)] bg-[var(--bg-card)] flex items-center gap-4 shadow-sm">
-            <div className="relative w-16 h-16 rounded-xl overflow-hidden border border-[var(--border-color)] flex-shrink-0">
-              <Image
-                src="/assets/faris-profile.jpg"
-                alt="Faris Ruknuddin"
-                fill
-                className="object-cover grayscale hover:grayscale-0 transition-all duration-300"
-              />
-            </div>
-            <div className="space-y-1 font-mono">
-              <div className="text-xs font-bold text-[var(--text-primary)]">
-                Faris Ruknuddin
-              </div>
-              <div className="text-[11px] text-[var(--text-secondary)]">
-                Founder @ Omnimate & AI Specialist
-              </div>
-              <div className="text-[10px] text-[var(--text-tertiary)] flex items-center gap-1.5">
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block" />
-                <span>B.E. AI & ML (Expected 2027)</span>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>

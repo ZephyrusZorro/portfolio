@@ -44,7 +44,7 @@ export function Navbar() {
                 alt="Faris Monogram"
                 width={32}
                 height={32}
-                className="object-contain transition-transform duration-300 group-hover:scale-105"
+                className="object-contain transition-transform duration-300 group-hover:scale-105 dark:invert"
               />
             </div>
             <span className="font-mono font-extrabold text-xl tracking-tight text-[var(--text-primary)]">
