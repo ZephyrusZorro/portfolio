@@ -44,13 +44,13 @@ export function Navbar() {
       >
         <div className="max-w-[1400px] mx-auto px-6 md:px-10 flex items-center justify-between">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-3 group">
-            <div className="relative w-8 h-8 flex items-center justify-center">
+          <a href="#" className="flex items-center gap-2.5 group">
+            <div className="relative w-7 h-7 flex items-center justify-center">
               <Image
-                src="/assets/faris-logo.png"
+                src="/assets/faris-logo-mark.png"
                 alt="Faris Monogram"
-                width={32}
-                height={32}
+                width={28}
+                height={28}
                 className="object-contain transition-transform duration-300 group-hover:scale-105 dark:invert"
               />
             </div>
