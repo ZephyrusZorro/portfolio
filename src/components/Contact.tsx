@@ -83,7 +83,7 @@ export function Contact() {
 
               {/* GitHub */}
               <a
-                href="https://github.com"
+                href="https://github.com/ZephyrusZorro/portfolio"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-between p-3.5 rounded-xl border border-[var(--border-color)] bg-[var(--bg-primary)] text-[var(--text-primary)] hover:border-[var(--text-primary)] transition-colors group"
