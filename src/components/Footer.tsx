@@ -4,8 +4,10 @@ import { useState, useEffect } from 'react';
 
 export function Footer() {
   const [time, setTime] = useState('');
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    setMounted(true);
     const updateTime = () => {
       const now = new Date();
       const options: Intl.DateTimeFormatOptions = {
@@ -41,7 +43,11 @@ export function Footer() {
 
         {/* Right */}
         <div className="flex items-center gap-4">
-          {time && <span className="text-emerald-500 font-semibold">{time}</span>}
+          {mounted && time && (
+            <span suppressHydrationWarning className="text-emerald-500 font-semibold">
+              {time}
+            </span>
+          )}
           <span>© 2026 FARIS. BUILT WITH PRECISION.</span>
         </div>
       </div>

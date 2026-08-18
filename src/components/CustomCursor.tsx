@@ -7,8 +7,10 @@ export function CustomCursor() {
   const [mousePosition, setMousePosition] = useState({ x: -100, y: -100 });
   const [cursorState, setCursorState] = useState<'default' | 'hover' | 'card'>('default');
   const [isVisible, setIsVisible] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    setMounted(true);
     // Only show custom cursor on fine pointer devices (desktop)
     if (window.matchMedia('(pointer: coarse)').matches) {
       return;
@@ -47,7 +49,7 @@ export function CustomCursor() {
     };
   }, [isVisible]);
 
-  if (!isVisible) return null;
+  if (!mounted || !isVisible) return null;
 
   const variants = {
     default: {
