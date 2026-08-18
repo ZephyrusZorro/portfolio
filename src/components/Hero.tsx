@@ -92,10 +92,35 @@ export function Hero() {
           </div>
         </div>
 
-        {/* Right Column — Architecture Diagram */}
-        <div className="lg:col-span-5 w-full">
+        {/* Right Column — Architecture Diagram & Profile Details */}
+        <div className="lg:col-span-5 w-full space-y-6">
           {/* Living Architecture Diagram */}
           <ArchitectureVisual />
+
+          {/* Founder Profile Details (Text Only) */}
+          <div className="p-5 rounded-2xl border border-[var(--border-color)] bg-[var(--bg-card)] shadow-sm font-mono space-y-3">
+            <div className="flex items-center justify-between border-b border-[var(--border-color)] pb-2.5 text-[10px] text-[var(--text-tertiary)] uppercase tracking-wider font-bold">
+              <span>FOUNDER & ENGINEER</span>
+              <span className="text-emerald-500 font-semibold flex items-center gap-1.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 status-dot-pulse" />
+                VERIFIED PROFILE
+              </span>
+            </div>
+
+            <div className="space-y-1">
+              <div className="text-sm font-extrabold text-[var(--text-primary)] tracking-tight">
+                Faris Ruknuddin
+              </div>
+              <div className="text-xs font-medium text-[var(--text-secondary)]">
+                Founder @ Omnimate & AI Specialist
+              </div>
+            </div>
+
+            <div className="pt-2 border-t border-[var(--border-color)] flex items-center justify-between text-[11px] text-[var(--text-tertiary)]">
+              <span>B.E. AI & ML (Expected 2027)</span>
+              <span className="font-semibold text-[var(--text-secondary)]">GPA: 8.5/10</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
